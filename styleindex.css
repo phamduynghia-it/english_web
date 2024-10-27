@@ -1,0 +1,96 @@
+/* Tổng quát */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bgr1.jpg);
+}
+.contact-btn {
+    position: fixed;
+    top: 60px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #ff5e5e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.contact-btn:hover {
+    background-color: #ff2e2e;
+}
+
+h1.head {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+/* Định dạng container chính */
+.course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Định dạng từng khóa học */
+.course {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+/* Định dạng cho hình ảnh khóa học */
+.course-image img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Định dạng phần thông tin khóa học */
+.course-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.course-info h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.course-info p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Định dạng nút Nhận Ngay */
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-red:hover {
+    background-color: darkred;
+}
+
+/* Định dạng cho phần click */
+.click {
+    margin-top: 15px;
+}

@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(img/bgr1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Course Container Styling */
+.course-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4500;
+    margin-bottom: 15px;
+}
+
+.price span {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Pay Button Styling */
+.pay-button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #ff4500;
+}
+
+.pay-button:hover {
+    background-color: #e03e00;
+    border-color: #e03e00;
+}
+
+/* Demo and Review Button Styling */
+.demo-button, .review-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: 2px solid #007bff;
+}
+
+.demo-button:hover, .review-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .course-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .course-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .course-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .course-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .course-card {
+        width: 300px;
+    }
+}
